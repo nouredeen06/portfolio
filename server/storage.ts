@@ -24,8 +24,8 @@ export class MemStorage implements IStorage {
         technologies: ["React", "Node.js", "PostgreSQL", "Tailwind CSS", "Express"],
         imageUrl: "/assets/generated_images/E-commerce_project_preview_640acce2.png",
         videoUrl: null,
-        liveUrl: "https://example.com",
-        githubUrl: "https://github.com/example/ecommerce",
+        liveUrl: null,
+        githubUrl: null,
       },
       {
         title: "Task Management System",
@@ -34,8 +34,8 @@ export class MemStorage implements IStorage {
         technologies: ["React", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"],
         imageUrl: "/assets/generated_images/Task_manager_project_preview_801f2da7.png",
         videoUrl: null,
-        liveUrl: "https://example.com",
-        githubUrl: "https://github.com/example/tasks",
+        liveUrl: null,
+        githubUrl: null,
       },
       {
         title: "Real-Time Chat Application",
@@ -44,8 +44,8 @@ export class MemStorage implements IStorage {
         technologies: ["React", "Node.js", "PostgreSQL", "TypeScript"],
         imageUrl: "/assets/generated_images/Chat_app_project_preview_5895d2dc.png",
         videoUrl: null,
-        liveUrl: "https://example.com",
-        githubUrl: "https://github.com/example/chat",
+        liveUrl: null,
+        githubUrl: null,
       },
     ];
 
