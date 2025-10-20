@@ -8,16 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import TechBadge from "./TechBadge";
-
-interface Project {
-  title: string;
-  description: string;
-  longDescription: string;
-  technologies: string[];
-  image: string;
-  liveUrl?: string;
-  githubUrl?: string;
-}
+import { type Project } from "@shared/schema";
 
 interface ProjectDialogProps {
   project: Project | null;
@@ -42,12 +33,23 @@ export default function ProjectDialog({
 
         <div className="space-y-6">
           <div className="aspect-video w-full overflow-hidden rounded-md bg-muted">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-full object-cover"
-              data-testid="img-dialog-preview"
-            />
+            {project.videoUrl ? (
+              <video
+                src={project.videoUrl}
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                data-testid="video-dialog-preview"
+              />
+            ) : (
+              <img
+                src={project.imageUrl}
+                alt={project.title}
+                className="w-full h-full object-cover"
+                data-testid="img-dialog-preview"
+              />
+            )}
           </div>
 
           <div className="space-y-4">
