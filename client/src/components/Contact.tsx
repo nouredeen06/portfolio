@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import {Coffee, Github, Linkedin, Mail, Twitter} from "lucide-react";
 
 export default function Contact() {
   const socials = [
-    { icon: Github, label: "GitHub", url: "https://github.com", handle: "@yourusername" },
-    { icon: Linkedin, label: "LinkedIn", url: "https://linkedin.com", handle: "Your Name" },
-    { icon: Twitter, label: "Twitter", url: "https://twitter.com", handle: "@yourusername" },
-    { icon: Mail, label: "Email", url: "mailto:your.email@example.com", handle: "your.email@example.com" },
+    { icon: Github, label: "GitHub", url: "https://github.com/nouredeen06", handle: "@nouredeen06" },
+    { icon: Linkedin, label: "LinkedIn", url: "https://www.linkedin.com/in/nouredeen-ghazal/", handle: "Nouredeen Ghazal" },
+    { icon: Mail, label: "Email", url: "mailto:nouredeen.ghazal42@gmail.com", handle: "nouredeen.ghazal42@gmail.com" },
+    { icon: Coffee, label: "Ko-fi", url: "https://ko-fi.com/nouredeen", handle: "Nouredeen" },
   ];
 
   return (
@@ -43,7 +43,7 @@ export default function Contact() {
 
         <div className="pt-12 text-sm text-muted-foreground">
           <p data-testid="text-footer">
-            © 2025 Your Name. Built with React, TypeScript & Tailwind CSS
+            © 2025 Nouredeen Ghazal. Built with React, TypeScript & Tailwind CSS
           </p>
         </div>
       </div>

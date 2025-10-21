@@ -1,31 +1,31 @@
 import { Card } from "@/components/ui/card";
-import { Code2, Database, Globe, Smartphone } from "lucide-react";
+import {Code2, Database, Globe, Puzzle, Smartphone, Wrench} from "lucide-react";
 
 export default function About() {
   const skills = [
     {
       icon: Code2,
-      title: "Frontend Development",
-      description: "Building responsive, interactive UIs with React, TypeScript, and modern CSS frameworks",
-      techs: ["React", "TypeScript", "Tailwind CSS", "Next.js"],
+      title: "Desktop Development",
+      description: "Building functional, cross-platform desktop applications with C# and the AvaloniaUI framework.",
+      techs: ["C#", ".NET", "AvaloniaUI", "XAML"],
     },
     {
       icon: Database,
-      title: "Backend Development",
-      description: "Creating scalable server-side applications with Node.js and database management",
-      techs: ["Node.js", "Express", "PostgreSQL", "MongoDB"],
+      title: "Database Management",
+      description: "Utilizing SQL Server to store and retrieve application data using fundamental database practices.",
+      techs: ["MS SQL Server", "T-SQL"],
     },
     {
-      icon: Globe,
-      title: "Full-Stack Projects",
-      description: "End-to-end application development from concept to deployment",
-      techs: ["REST APIs", "Authentication", "Deployment", "Git"],
+      icon: Puzzle,
+      title: "Software Principles",
+      description: "Applying core programming concepts to write organized and understandable code for desktop applications.",
+      techs: ["Object-Oriented Programming (OOP)", "MVVM Pattern"],
     },
     {
-      icon: Smartphone,
-      title: "Mobile Development",
-      description: "Cross-platform mobile applications with React Native",
-      techs: ["React Native", "Expo", "Mobile UI"],
+      icon: Wrench,
+      title: "Development Tools",
+      description: "Using professional tools to build, manage, and version control software projects efficiently.",
+      techs: ["JetBrains Rider", "Git", "GitHub", "NuGet"],
     },
   ];
 
@@ -37,8 +37,8 @@ export default function About() {
             About Me
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg" data-testid="text-about-description">
-            Passionate developer with expertise in modern web technologies and a focus on creating elegant, 
-            efficient solutions to complex problems.
+            Software developer creating cross-platform desktop applications with C# and AvaloniaUI,
+            with a focus on writing clean code for functional, data-driven user interfaces.
           </p>
         </div>
 
